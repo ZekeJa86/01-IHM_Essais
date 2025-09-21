@@ -1,19 +1,22 @@
 <script setup>
 import DarkMode from './DarkMode.vue' // chemin relatif depuis Header.vue
+console.log("Header.vue monté ✅");
 </script>
 
 <template>
   <header>
     <div class="nav">
       <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="logo" />
-      <a href="#">Home</a>
-      <a href="#">Monitoring</a>
-      <a href="#">Parameters</a>
-      <a href="#">Logs</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/profil">Profil</router-link>
+      <router-link to="/monitoring">Monitoring</router-link>
+      <router-link to="/parameters">Parameters</router-link>
+      <router-link to="/logs">Logs</router-link>
       <DarkMode />
     </div>
   </header>
 </template>
+
 
 <style>
 .nav {

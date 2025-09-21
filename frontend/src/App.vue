@@ -1,10 +1,15 @@
-<!-- filepath: c:\Users\sylva\myproject\frontend\src\App.vue -->
+<!-- Architecture page header -> main variable -> footer -->
 <template>
-  <Home />
+  <Header />
+  <main>
+    <router-view /> <!-- Ici le contenu change -->
+  </main>
+  <Footer />
 </template>
 
 <script setup>
-import Home from './components/Home.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <style lang="postcss">
