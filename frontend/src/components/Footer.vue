@@ -1,9 +1,9 @@
-<!-- filepath: c:\Users\sylva\myproject\frontend\src\components\Home.vue -->
 <template>
+    <footer>
+       TEST 
+    </footer>
 </template>
 
 <script setup>
-import DarkMode from './DarkMode.vue';
-import Header from './Header.vue'
+console.log("Footer.vue monté ✅");
 </script>
-

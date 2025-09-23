@@ -1,8 +1,7 @@
-<!-- Architecture page header -> main variable -> footer -->
-<template>
+<!-- Architecture page header -> main variable -> footer --><template>
   <Header />
   <main>
-    <router-view /> <!-- Ici le contenu change -->
+  <RouterView /> <!-- Ici le contenu change -->
   </main>
   <Footer />
 </template>
@@ -10,7 +9,9 @@
 <script setup>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import { RouterView } from 'vue-router';
 </script>
+
 
 <style lang="postcss">
 html.dark { 

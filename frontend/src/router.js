@@ -1,9 +1,9 @@
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from './components/Home.vue'
 import Profil from './components/Profil.vue'
 import Monitoring from './components/Monitoring.vue'
 import Logs from './components/Logs.vue'
 import Parameters from './components/Parameters.vue'
-import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   { path: '/', component: Home },
@@ -13,7 +13,9 @@ const routes = [
   { path: '/logs', component: Logs }
 ]
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 })
+
+export default router
