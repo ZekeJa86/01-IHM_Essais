@@ -7,13 +7,13 @@ const isDark = useDark(document.documentElement, false)
 
 
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-500">
+  <div className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-500">
     <!-- Switch animé -->
-    <div class="switch">
-      <input type="checkbox" id="Switch" class="switch__input" v-model="isDark" />
-      <label for="Switch" class="switch__label">
-        <span class="switch__indicator"></span>
-        <span class="switch__decoration"></span>
+    <div className="switch">
+      <input type="checkbox" id="Switch" className="switch__input" v-model="isDark" />
+      <label for="Switch" className="switch__label">
+        <span className="switch__indicator"></span>
+        <span className="switch__decoration"></span>
       </label>
     </div>
   </div>
