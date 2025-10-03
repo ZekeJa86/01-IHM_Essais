@@ -23,3 +23,7 @@ body {
   height: 100vh;
   text-align: center;
 }
+
+.handwriting {
+  font-family: 'Swanky and Moo Moo', cursive;
+}

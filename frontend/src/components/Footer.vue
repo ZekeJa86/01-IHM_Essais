@@ -1,10 +1,11 @@
 <template>
-<footer class="flex flew-row dark:bg-gray-900">
+<footer class="flex flew-row dark:bg-gray-900 ">
     <div class="w-full max-w-screen-xl mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <a class="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <a class="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse h-30">
                 <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-20 w-auto" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Development</span>
+                <span class="self-center text-l font-semibold whitespace-nowrap dark:text-white">Modernize testing, secure the 
+future</span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>

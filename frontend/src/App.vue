@@ -1,10 +1,14 @@
 <template>
+  <!-- Loader pendant le chargement -->
   <Loader v-if="loading" />
-  <div v-else>
-    <Header />
-    <RouterView />
-    <Footer />
-  </div>
+  
+<div v-else class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white">
+  <Header />
+  <Transition name="slide-right" mode="out-in">
+    <RouterView :key="$route.fullPath" />
+  </Transition>
+  <Footer />
+</div>
 </template>
 
 <script setup>
@@ -23,3 +27,30 @@ onMounted(() => {
   }, 2000)
 })
 </script>
+
+<style>
+/* Transition slide vers la droite */
+.slide-right-enter-active, .slide-right-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-right-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-right-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-right-leave-from {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-right-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+</style>
