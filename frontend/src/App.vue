@@ -5,9 +5,13 @@
   <div v-else class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white flex flex-col">
     <Header />
     <div class="transition-container flex-1">
-      <Transition name="slide-right" mode="out-in">
-        <RouterView :key="$route.fullPath" />
-      </Transition>
+      <RouterView v-slot="{ Component, route }">
+        <Transition name="slide-right" mode="out-in">
+          <div :key="route.fullPath" class="view-wrapper">
+            <component :is="Component" />
+          </div>
+        </Transition>
+      </RouterView>
     </div>
     <Footer />
   </div>
@@ -40,14 +44,15 @@ html, body {
 /* Container pour les transitions */
 .transition-container {
   position: relative;
-  overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }
 
-/* Les éléments de la transition doivent prendre toute la hauteur */
-.transition-container > div {
+/* Wrapper pour chaque vue */
+.view-wrapper {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -57,11 +62,17 @@ html, body {
 .slide-right-enter-active, 
 .slide-right-leave-active {
   transition: all 0.5s ease;
+}
+
+.slide-right-enter-active {
+  position: relative;
+}
+
+.slide-right-leave-active {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 .slide-right-enter-from {
@@ -72,7 +83,6 @@ html, body {
 .slide-right-enter-to {
   transform: translateX(0);
   opacity: 1;
-  position: relative;
 }
 
 .slide-right-leave-from {

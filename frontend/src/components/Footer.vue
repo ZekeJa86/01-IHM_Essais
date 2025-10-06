@@ -1,31 +1,35 @@
 <template>
-<footer class="flex flew-row dark:bg-gray-900 ">
-    <div class="w-full max-w-screen-xl mx-auto">
+<footer class="sticky bottom-0 flex flex-row dark:bg-gray-900 py-1 w-full">
+    <div class="w-full max-w-screen-xl mx-auto px-4">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <a class="flex items-center sm:mb-0 space-x-3 rtl:space-x-reverse h-30">
-                <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-20 w-auto" />
-                <span class="self-center text-l font-semibold whitespace-nowrap dark:text-white">Modernize testing, secure the 
+            <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-12 w-auto" />
+                <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Modernize testing, secure the 
 future</span>
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400">
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    <a href="#" class="hover:underline me-4 md:me-6">
+                        <router-link to="/" :class="navLinkClass">About</router-link>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    <a href="#" class="hover:underline me-4 md:me-6">
+                         <router-link to="/privacy" :class="navLinkClass">Privacy Policy</router-link>
+                    </a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
+                    <a href="#" class="hover:underline">
+                         <router-link to="/contact" :class="navLinkClass">Contact</router-link>
+                    </a>
                 </li>
             </ul>
         </div>
-        <hr class="my-1 border-gray-200 sm:mx-auto dark:border-gray-700" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a class="hover:underline">KDEV</a>. All Rights Reserved.</span>
+        <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 pb-2">© 2025 <a class="hover:underline">KDEV</a>. All Rights Reserved.</span>
     </div>
 </footer>
+
 </template>
 
 <script setup>
