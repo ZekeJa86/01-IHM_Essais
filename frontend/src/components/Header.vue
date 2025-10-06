@@ -15,7 +15,5 @@ const navLinkClass =
     </div>
   </header>
   <!-- Décalage du contenu pour ne pas être caché par le header -->
-  <main class="pt-16">
-    <!-- ton contenu principal ici -->
-  </main>
+
 </template>
