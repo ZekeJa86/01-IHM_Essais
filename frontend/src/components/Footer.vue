@@ -1,5 +1,5 @@
 <template>
-<footer class="sticky bottom-0 flex flex-row dark:bg-gray-900 py-1 w-full">
+<footer class="flex flex-row dark:bg-gray-900 py-1 w-full">
     <div class="w-full max-w-screen-xl mx-auto px-4">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">

@@ -16,6 +16,7 @@
     "@vue-email/render": "^0.0.9",
     "@vueuse/core": "^10.x.x",
     "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
     "motion": "^12.23.22",
     "tailwind-merge": "^3.3.1",
     "vue": "^3.2.37",

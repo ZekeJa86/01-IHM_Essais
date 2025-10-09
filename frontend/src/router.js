@@ -3,12 +3,12 @@ import Home from './components/Home.vue'
 import Profil from './components/Profil.vue'
 import Privacy from './components/Privacy.vue'
 import Contact from './components/Contact.vue'
-import Parameters from './components/Parameters.vue'
+import Portfolio from './components/Portfolio.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/profil', component: Profil },
-  { path: '/parameters', component: Parameters },
+  { path: '/portfolio', component: Portfolio },
   { path: '/privacy', component: Privacy },
   { path: '/contact', component: Contact }
 ]

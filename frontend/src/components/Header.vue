@@ -4,11 +4,11 @@ const navLinkClass =
 </script>
 <template>
   <header>
-    <div class="fixed top-0 left-0 w-full flex flex-row bg-slate-900/80 h-16 justify-start items-center gap-4 px-4 z-50">
+    <div class="fixed top-0 left-0 w-full flex flex-row  h-16 justify-start items-center gap-4 px-4 z-50">
       <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-20 w-auto" />
       <router-link to="/" :class="navLinkClass">Home</router-link>
       <router-link to="/profil" :class="navLinkClass">Profil</router-link>
-      <router-link to="/parameters" :class="navLinkClass">Parameters</router-link>
+      <router-link to="/portfolio" :class="navLinkClass">Portfolio</router-link>
       <router-link to="/contact" :class="navLinkClass">Contact</router-link>
       <DarkMode />
     </div>
