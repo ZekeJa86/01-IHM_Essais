@@ -174,7 +174,7 @@
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                   <span class="text-blue-400 font-bold">P</span>
                 </div>
-                <span class="text-gray-300">Python</span>
+                <span class="text-gray-300">Golang</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
