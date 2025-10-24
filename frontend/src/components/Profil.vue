@@ -8,92 +8,48 @@
       </div>
 
       <!-- Orbes lumineux -->
-      <div class="absolute top-20 left-20 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
-      <div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-15 animate-pulse-slow"></div>
+      <div class="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+      <div class="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-400 to-blue-600 rounded-full filter blur-3xl opacity-15 animate-pulse-slow"></div>
 
-      <div class="relative z-10 pt-10 flex-1 flex flex-col items-center justify-center text-white p-4 space-y-8">
-        <!-- Image avec style minimaliste moderne -->
-        <div class="relative group">
-          <!-- Ombre douce -->
-          <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-          
-          <div class="relative">
-            <!-- Cadre fin animé -->
-            <div class="absolute inset-0 rounded-full">
-              <svg class="w-full h-full" viewBox="0 0 100 100">
-                <circle 
-                  cx="50" 
-                  cy="50" 
-                  r="48" 
-                  fill="none" 
-                  stroke="url(#gradient)" 
-                  stroke-width="0.3"
-                  stroke-dasharray="2 4"
-                  class="circle-rotate"
-                />
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.4" />
-                    <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
-                    <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.4" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            
-            <!-- Image circulaire -->
-            <div class="relative w-80 h-80 rounded-full overflow-hidden border border-gray-700/30 group-hover:border-blue-500/30 transition-all duration-500">
-              <img 
-                src="../components/Images/myself.jpeg" 
-                alt="Profile" 
-                class="w-full h-full object-cover filter grayscale-0 group-hover:scale-105 transition-all duration-700" 
-              />
+      <!-- Section Hero simple -->
+      <div class="relative z-10 flex-1 flex flex-col items-center justify-center text-white">
+        <!-- Image pleine largeur -->
+        <div class="relative w-full mx-auto group">
+          <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden not-[]:shadow-lg">
+            <img 
+              src="../assets/Images/myself.png" 
+              alt="KABRÉ Profile" 
+              class="w-full h-full object-cover"
+            />
+
+            <!-- Overlay avec texte au survol -->
+            <div class="absolute inset-0 flex flex-col items-center justify-end text-center px-6 pb-12 bg-slate-800/50">
+              <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider">
+                KABRÉ
+              </h1>
               
-              <!-- Overlay subtil -->
-              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
+                Ma passion pour la <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#">technologie</a> va de pair avec ma recherche constante de défis intellectuels.
+                Mon parcours <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#">professionnel</a> s'est construit autour de la résolution de problèmes complexes.
+                N'hésitez pas à me <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#contact">contacter</a>.
+              </p>
             </div>
-            
-            <!-- Petits accents aux 4 points cardinaux -->
-            <div class="accent-dot accent-top"></div>
-            <div class="accent-dot accent-right"></div>
-            <div class="accent-dot accent-bottom"></div>
-            <div class="accent-dot accent-left"></div>
           </div>
         </div>
 
-        <div class="card-body max-w-3xl">
-          <!-- Badge Industrie 4.0 -->
-          <div class="inline-block px-4 py-2 bg-blue-500/20 border border-blue-400/30 rounded-full mb-4 animate-fade-in">
-            <span class="text-blue-400 font-mono text-sm tracking-wider">INDUSTRIE 4.0</span>
-          </div>
-
-          <h5 class="tracking-wide card-title manrope mb-2 pt-10 text-3xl mx-auto text-center font-bold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent animate-fade-in-up">
-            KABRÉ SYLVAIN
-          </h5>
-          
-          <!-- Ligne décorative -->
-          <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-8 animate-fade-in-up"></div>
-
-          <p class="text-xl pt-5 text-gray-200 leading-relaxed animate-fade-in-up-delay">
-            Ma passion pour la <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold border-b-2 border-transparent hover:border-blue-400" href="#">technologie</a> va de pair avec ma recherche constante de défis intellectuels.
-            Mon parcours <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold border-b-2 border-transparent hover:border-blue-400" href="#">professionnel</a> s'est construit autour de la résolution de problèmes complexes, une démarche qui a façonné mes compétences. 
-            Si vous partagez ces aspirations ou souhaitez échanger sur des sujets technologiques, n'hésitez pas à me <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold border-b-2 border-transparent hover:border-blue-400" href="#">contacter.</a>
-          </p>
-
-          <!-- Boutons CTA -->
-          <div class="flex gap-4 justify-center mt-8 animate-fade-in-up-delay">
-            <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50">
-              Télécharger mon CV
-            </button>
-            <button class="px-6 py-3 bg-transparent border-2 border-blue-400 hover:bg-blue-400/10 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
-              Me contacter
-            </button>
-          </div>
+        <!-- Boutons d'action sous l'image -->
+        <div class="flex flex-wrap gap-4 justify-center py-12">
+          <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300">
+            Me contacter
+          </a>
+          <a href="#parcours" class="px-8 py-3 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300">
+            Voir mon parcours
+          </a>
         </div>
       </div>
 
       <!-- Indicateur de scroll -->
-      <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
@@ -146,7 +102,7 @@
             <div class="space-y-3">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">V</span>
+                  <span class="text-blue-400 font-bold text-xs">VJS</span>
                 </div>
                 <span class="text-gray-300">Vue.js</span>
               </div>
@@ -162,6 +118,12 @@
                 </div>
                 <span class="text-gray-300">Tailwind CSS</span>
               </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <span class="text-blue-400 font-bold text-xs">EJS</span>
+                </div>
+                <span class="text-gray-300">Email JS</span>
+              </div>
             </div>
           </div>
 
@@ -172,15 +134,15 @@
             <div class="space-y-3">
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">P</span>
+                  <span class="text-blue-400 font-bold">Go</span>
                 </div>
                 <span class="text-gray-300">Golang</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">N</span>
+                  <span class="text-blue-400 font-bold">V</span>
                 </div>
-                <span class="text-gray-300">Node.js</span>
+                <span class="text-gray-300">Vite</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -200,19 +162,19 @@
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                   <span class="text-blue-400 font-bold">G</span>
                 </div>
-                <span class="text-gray-300">Git</span>
+                <span class="text-gray-300">Github</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">D</span>
+                  <span class="text-blue-400 font-bold text-xs">VS</span>
                 </div>
-                <span class="text-gray-300">Docker</span>
+                <span class="text-gray-300">VS Code</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">C</span>
+                  <span class="text-blue-400 font-bold">V</span>
                 </div>
-                <span class="text-gray-300">CI/CD</span>
+                <span class="text-gray-300">Vercel</span>
               </div>
             </div>
           </div>
@@ -221,137 +183,75 @@
     </div>
 
     <!-- Timeline Parcours -->
-    <div class="relative py-20 bg-gray-900">
-      <div class="max-w-4xl mx-auto px-4">
+    <div id="parcours" class="relative py-20 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4">
         <h2 class="text-4xl font-bold text-center mb-4 text-white">Parcours</h2>
         <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12"></div>
 
-        <div class="relative">
-          <!-- Ligne verticale -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-500/30"></div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Colonne Expérience Professionnelle -->
+          <div class="relative">
+            <div class="sticky top-8 mb-8">
+              <h3 class="text-2xl font-bold text-blue-400 mb-2 flex items-center gap-3">
+                <span class="text-3xl">💼</span>
+                Expérience Professionnelle
+              </h3>
+              <div class="h-1 w-20 bg-blue-500"></div>
+            </div>
 
-          <!-- Expérience 1 -->
-          <div class="relative mb-12 flex items-center">
-            <div class="w-1/2 pr-8 text-right">
-              <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white mb-2">Ingénieur Tests</h3>
-                <p class="text-blue-400 mb-2">2020 - Présent</p>
-                <p class="text-gray-400 text-sm">Développement d'applications de test pour l'industrie automobile</p>
+            <div class="relative space-y-8">
+              <!-- Ligne verticale -->
+              <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-500/30"></div>
+
+              <!-- Expérience 1 -->
+              <div class="relative pl-8">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <h4 class="text-xl font-semibold text-white mb-2">Ingénieur en développement de solutions de test</h4>
+                  <p class="text-blue-400 mb-3 font-semibold">2023 - Présent</p>
+                  <p class="text-gray-400 text-sm leading-relaxed">Développement d'applications de test pour l'industrie automobile</p>
+                </div>
+              </div>
+
+              <!-- Expérience 2 -->
+              <div class="relative pl-8">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <h4 class="text-xl font-semibold text-white mb-2">Ingénieur bureau d'études</h4>
+                  <p class="text-blue-400 mb-3 font-semibold">2019 - 2022</p>
+                  <p class="text-gray-400 text-sm leading-relaxed">Électromécaniques dans le milieu des ascensoristes</p>
+                </div>
               </div>
             </div>
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
-            <div class="w-1/2"></div>
           </div>
 
-          <!-- Expérience 2 -->
-          <div class="relative mb-12 flex items-center">
-            <div class="w-1/2"></div>
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
-            <div class="w-1/2 pl-8">
-              <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white mb-2">Développeur Full-Stack</h3>
-                <p class="text-blue-400 mb-2">2018 - 2020</p>
-                <p class="text-gray-400 text-sm">Création d'applications web modernes et performantes</p>
+          <!-- Colonne KDEV -->
+          <div class="relative">
+            <div class="sticky top-8 mb-8">
+              <h3 class="text-2xl font-bold text-purple-400 mb-2 flex items-center gap-3">
+                <span class="text-3xl">👨🏽‍💼</span>
+                KDEV
+              </h3>
+              <div class="h-1 w-20 bg-purple-500"></div>
+            </div>
+
+            <div class="relative space-y-8">
+              <!-- Ligne verticale -->
+              <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-purple-500/30"></div>
+
+              <!-- Formation 1 -->
+              <div class="relative pl-8">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-gray-900"></div>
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <h4 class="text-xl font-semibold text-white mb-2">Développeur Full-Stack</h4>
+                  <p class="text-purple-400 mb-3 font-semibold">2025 - Présent</p>
+                  <p class="text-gray-400 text-sm leading-relaxed">Création d'applications web modernes et performantes</p>
+                  <p class="text-gray-400 text-sm leading-relaxed mt-2">Création et modernisation d'applications de bureau pour l'industrie</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- Formation -->
-          <div class="relative mb-12 flex items-center">
-            <div class="w-1/2 pr-8 text-right">
-              <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300">
-                <h3 class="text-xl font-semibold text-white mb-2">Formation Ingénieur</h3>
-                <p class="text-blue-400 mb-2">2015 - 2018</p>
-                <p class="text-gray-400 text-sm">Spécialisation en informatique et systèmes embarqués</p>
-              </div>
-            </div>
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
-            <div class="w-1/2"></div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Section Vidéo Voyage - Background Video -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <!-- Vidéo en background -->
-      <div class="absolute inset-0">
-        <video 
-          ref="videoElement"
-          src="../components/Videos/Trip.mp4" 
-          class="w-full h-full object-cover"
-          autoplay 
-          loop 
-          muted
-          playsinline
-        ></video>
-        <!-- Overlay sombre -->
-        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
-        <div class="absolute inset-0 bg-blue-500/10"></div>
-      </div>
-
-      <!-- Effet de grille par dessus -->
-      <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0 tech-pattern"></div>
-      </div>
-
-      <!-- Contenu -->
-      <div class="relative z-10 max-w-5xl mx-auto px-4 py-20 text-center">
-        <!-- Badge -->
-        <div class="inline-block px-6 py-3 bg-blue-500/20 border border-blue-400/30 rounded-full mb-8 backdrop-blur-sm">
-          <span class="text-blue-400 font-mono text-sm tracking-wider">VOYAGES & DÉCOUVERTES</span>
-        </div>
-
-        <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Explorer le <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">monde</span>
-        </h2>
-
-        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
-
-        <p class="text-xl md:text-2xl text-gray-200 leading-relaxed mb-12 max-w-3xl mx-auto">
-          Milan, Italie • 2025
-        </p>
-
-        <p class="text-lg text-gray-300 leading-relaxed mb-12 max-w-3xl mx-auto">
-          Entre architecture historique et modernité, chaque voyage est une source d'inspiration qui nourrit ma créativité et enrichit ma vision du monde.
-        </p>
-
-
-        <!-- Stats en ligne -->
-        <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-          <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-blue-400/20 hover:border-blue-400/50 transition-all duration-300 group">
-            <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2 transition-transform duration-300 group-hover:scale-110">
-              15+
-            </div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">Pays visités</div>
-          </div>
-          <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-blue-400/20 hover:border-blue-400/50 transition-all duration-300 group">
-            <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2 transition-transform duration-300 group-hover:scale-110">
-              ∞
-            </div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">Découvertes</div>
-          </div>
-          <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-blue-400/20 hover:border-blue-400/50 transition-all duration-300 group">
-            <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2 transition-transform duration-300 group-hover:scale-110">
-              100%
-            </div>
-            <div class="text-gray-300 text-sm uppercase tracking-wider">Curiosité</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Coins décoratifs -->
-      <div class="absolute top-8 left-8 w-20 h-20 border-t-2 border-l-2 border-blue-400/30 pointer-events-none"></div>
-      <div class="absolute top-8 right-8 w-20 h-20 border-t-2 border-r-2 border-blue-400/30 pointer-events-none"></div>
-      <div class="absolute bottom-8 left-8 w-20 h-20 border-b-2 border-l-2 border-blue-400/30 pointer-events-none"></div>
-      <div class="absolute bottom-8 right-8 w-20 h-20 border-b-2 border-r-2 border-blue-400/30 pointer-events-none"></div>
-
-      <!-- Particules flottantes -->
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="floating-particle" style="top: 15%; left: 10%;"></div>
-        <div class="floating-particle" style="top: 70%; right: 12%; animation-delay: 2s;"></div>
-        <div class="floating-particle" style="bottom: 25%; left: 85%; animation-delay: 4s;"></div>
-        <div class="floating-particle" style="top: 45%; right: 80%; animation-delay: 1s;"></div>
       </div>
     </div>
   </div>
@@ -367,7 +267,6 @@ export default {
     const animatedProjects = ref(0);
     const animatedTech = ref(0);
     const animatedClients = ref(0);
-    const videoElement = ref(null);
 
     const animateValue = (ref, target, duration = 2000) => {
       const start = 0;
@@ -408,8 +307,7 @@ export default {
       animatedYears,
       animatedProjects,
       animatedTech,
-      animatedClients,
-      videoElement
+      animatedClients
     };
   }
 };
@@ -428,145 +326,16 @@ export default {
   100% { transform: translateY(50px); }
 }
 
-/* Style minimaliste moderne */
-.circle-rotate {
-  transform-origin: center;
-  animation: rotateCircle 20s linear infinite;
-}
-
-@keyframes rotateCircle {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Petits accents discrets */
-.accent-dot {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.5s ease;
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
-}
-
-.group:hover .accent-dot {
-  opacity: 0.6;
-}
-
-.accent-top {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-}
-
-.accent-right {
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%) translateX(10px);
-}
-
-.accent-bottom {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-}
-
-.accent-left {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%) translateX(-10px);
-}
-
-.tech-pattern {
-  background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
-  background-size: 30px 30px;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
-}
-
-.animate-fade-in-up-delay {
-  animation: fadeInUp 0.8s ease-out 0.4s both;
-}
-
-.animate-fade-in-up-delay-1 {
-  animation: fadeInUp 0.8s ease-out 0.4s both;
-}
-
-.animate-fade-in-up-delay-2 {
-  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .animate-pulse-slow {
   animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.photo-card {
-  transition: transform 0.3s ease;
-}
-
-.photo-card:hover {
-  transform: translateY(-8px);
-}
-
-.video-showcase {
-  transition: transform 0.3s ease;
-}
-
-.video-showcase:hover {
-  transform: translateY(-4px);
-}
-
-.floating-particle {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
-  animation: floatParticle 6s ease-in-out infinite;
-}
-
-@keyframes floatParticle {
-  0%, 100% {
-    transform: translateY(0) translateX(0);
-    opacity: 0.3;
-  }
-  25% {
-    transform: translateY(-30px) translateX(15px);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translateY(-60px) translateX(-10px);
-    opacity: 0.5;
-  }
-  75% {
-    transform: translateY(-30px) translateX(-20px);
-    opacity: 0.8;
-  }
+html {
+  scroll-behavior: smooth;
 }
 </style>

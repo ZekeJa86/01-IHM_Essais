@@ -36,7 +36,7 @@
 
       <!-- CTA Button -->
       <a href="#contact" 
-         class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-full 
+         class="bg-gradient-to-r from-blue-500 to-purple-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-full 
                 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50">
         Demander un devis
       </a>
@@ -51,7 +51,7 @@
     
     <!-- Services Section -->
     <div class="max-w-6xl w-full mx-auto py-20 relative z-10">
-      <h2 class="text-4xl font-bold text-center text-slate-200 mb-16">Nos Services</h2>
+      <h2 class="text-4xl font-bold text-center text-slate-200 mb-16">Mes Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 
                     hover:bg-slate-800/70 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
