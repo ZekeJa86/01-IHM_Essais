@@ -19,7 +19,7 @@
             <div class="text-slate-300 space-y-1 text-sm">
               <p><span class="text-slate-400">Nom :</span> K-DEV</p>
               <p><span class="text-slate-400">Adresse :</span> 18 Avenue Beau Village, France</p>
-              <p><span class="text-slate-400">Email :</span> <a href="mailto:kdev@gmail.com" class="text-blue-400 hover:underline">kdev@gmail.com</a></p>
+              <p><span class="text-slate-400">Email :</span> <a href="mailto:k.development.contact@gmail.com" class="text-blue-400 hover:underline">k.development.contact@gmail.com</a></p>
             </div>
           </div>
         </section>
@@ -250,7 +250,7 @@
           <div class="bg-gradient-to-r from-blue-900/50 to-blue-800/50 border border-blue-500/30 rounded-lg p-6">
             <p class="text-white font-semibold text-lg mb-4">K-DEV</p>
             <div class="space-y-2 text-slate-200">
-              <p>📧 Email : <a href="mailto:kdev@gmail.com" class="text-blue-400 hover:underline">kdev@gmail.com</a></p>
+              <p>📧 Email : <a href="mailto:k.development.contact@gmail.com" class="text-blue-400 hover:underline">k.development.contact@gmail.com</a></p>
               <p>📍 Adresse : 18 Avenue Beau Village, France</p>
             </div>
           </div>

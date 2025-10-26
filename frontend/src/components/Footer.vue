@@ -4,13 +4,12 @@
         <div class="sm:flex sm:items-center sm:justify-between">
             <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-12 w-auto" />
-                <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">Modernize testing, secure the 
-future</span>
+                <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">« Ensemble, donnons vie à vos projets numériques. »</span>
             </a>
             <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400">
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">
-                        <router-link to="/" :class="navLinkClass">About</router-link>
+                        <router-link to="/portfolio" :class="navLinkClass">Portfolio</router-link>
                     </a>
                 </li>
                 <li>

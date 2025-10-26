@@ -6,8 +6,8 @@
   
   <div class="flex-1 flex flex-col">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-balance text-white-900 sm:text-5xl">Go/No-Go Zone</h2>
-      <p class="mt-2 text-lg/8 text-gray-600">Modernize testing, secure the future</p>
+      <h2 class="text-4xl font-semibold tracking-tight text-balance text-white-900 sm:text-5xl">On en discute?</h2>
+      <p class="mt-2 text-lg/8 text-gray-600">« Ensemble, donnons vie à vos projets numériques. »</p>
     </div>
 
     <!-- Message de confirmation/erreur -->
@@ -163,8 +163,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import DarkMode from './DarkMode.vue';
-import Header from './Header.vue';
+import emailjs from '@emailjs/browser';
 
 console.log("Contact.vue monté ✅");
 
@@ -186,6 +185,11 @@ const messageText = ref('');
 const messageClass = ref('');
 const isSubmitting = ref(false);
 
+// ⚠️ REMPLACEZ CES VALEURS PAR VOS IDENTIFIANTS EMAILJS
+const SERVICE_ID = 'service_ueu7yho';      // Ex: 'service_abc123'
+const TEMPLATE_ID = 'template_t676mlv';    // Ex: 'template_xyz789'
+const PUBLIC_KEY = 'lVYH6fbtxpTe8Jtz-';      // Ex: 'user_ABC123XYZ'
+
 // Fonction pour afficher un message
 const displayMessage = (text, type) => {
   messageText.value = text;
@@ -199,7 +203,7 @@ const displayMessage = (text, type) => {
   }, 5000);
 };
 
-// Fonction de soumission du formulaire
+// Fonction de soumission du formulaire avec EmailJS
 const handleSubmit = async () => {
   // Vérification de la case à cocher
   if (!formData.value.agreeToPolicy) {
@@ -210,34 +214,44 @@ const handleSubmit = async () => {
   isSubmitting.value = true;
 
   try {
-    // Vérifier que l'objet window.go existe (Wails)
-    if (!window.go || !window.go.main || !window.go.main.App) {
-      throw new Error('Wails runtime non disponible. Êtes-vous en mode dev ?');
-    }
+    // Préparation des paramètres du template
+    const templateParams = {
+      from_name: `${formData.value.firstName} ${formData.value.lastName}`,
+      from_email: formData.value.email,
+      company: formData.value.company || 'Non spécifié',
+      phone: formData.value.phoneNumber 
+        ? `(${formData.value.country}) ${formData.value.phoneNumber}` 
+        : 'Non spécifié',
+      message: formData.value.message,
+      to_name: 'KABRÉ', // Votre nom
+    };
 
-    // Appel à la fonction Go via Wails
-    const result = await window.go.main.App.SendEmail(formData.value);
+    // Envoi via EmailJS
+    const response = await emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      templateParams,
+      PUBLIC_KEY
+    );
 
-    if (result.success) {
-      displayMessage('✅ ' + result.message, 'success');
-      
-      // Réinitialisation du formulaire
-      formData.value = {
-        firstName: '',
-        lastName: '',
-        company: '',
-        email: '',
-        country: 'EU',
-        phoneNumber: '',
-        message: '',
-        agreeToPolicy: false
-      };
-    } else {
-      displayMessage('❌ ' + result.message, 'error');
-    }
+    console.log('EmailJS Response:', response);
+    displayMessage('✅ Message envoyé avec succès ! Je vous répondrai bientôt.', 'success');
+    
+    // Réinitialisation du formulaire
+    formData.value = {
+      firstName: '',
+      lastName: '',
+      company: '',
+      email: '',
+      country: 'EU',
+      phoneNumber: '',
+      message: '',
+      agreeToPolicy: false
+    };
+
   } catch (error) {
-    console.error('Erreur:', error);
-    displayMessage('❌ Erreur lors de l\'envoi: ' + error.message, 'error');
+    console.error('Erreur EmailJS:', error);
+    displayMessage('❌ Erreur lors de l\'envoi. Veuillez réessayer.', 'error');
   } finally {
     isSubmitting.value = false;
   }

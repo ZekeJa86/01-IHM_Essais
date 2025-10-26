@@ -24,22 +24,21 @@
             />
             <!-- Overlay avec texte au survol -->
             <div class="absolute inset-0 flex flex-col items-center justify-end text-center px-6 pb-12 bg-slate-800/50">
-              <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider">
-                KABRÉ
+              <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider animate-fade-in">
+                KABRÉ Sylvain
               </h1>
               
-              <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl">
-                Ma passion pour la <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#">technologie</a> va de pair avec ma recherche constante de défis intellectuels.
-                Mon parcours <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#">professionnel</a> s'est construit autour de la résolution de problèmes complexes.
-                N'hésitez pas à me <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#contact">contacter</a>.
+              <p class="text-lg md:text-2xl text-gray-200 leading-relaxed max-w-3xl animate-fade-in-delay">
+                « Ensemble, donnons vie à vos projets <a class="text-blue-400 hover:text-blue-300 transition-colors font-semibold" href="#">numériques</a>. » 
               </p>
+
             </div>
           </div>
         </div>
 
         <!-- Boutons d'action sous l'image -->
-        <div class="flex flex-wrap gap-4 justify-center py-12">
-          <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300">
+        <div class="flex flex-wrap gap-4 justify-center py-12 animate-fade-in-delay-2">
+          <a href="/contact" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300">
             Me contacter
           </a>
           <a href="#parcours" class="px-8 py-3 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300">
@@ -56,47 +55,85 @@
       </div>
     </div>
 
-    <!-- Statistiques animées -->
+    <!-- Statistiques réelles et vendeuses -->
     <div class="relative py-20 bg-gray-900">
       <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white scroll-reveal">Mon expertise en chiffres</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div class="text-center group">
+          <div class="text-center group scroll-reveal" style="--delay: 0.1s">
             <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
               {{ animatedYears }}+
             </div>
-            <div class="text-gray-400 text-sm uppercase tracking-wider">Années d'expérience</div>
+            <div class="text-gray-400 text-sm uppercase tracking-wider">Ans d'ingénierie</div>
           </div>
-          <div class="text-center group">
-            <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
-              {{ animatedProjects }}+
-            </div>
-            <div class="text-gray-400 text-sm uppercase tracking-wider">Projets réalisés</div>
-          </div>
-          <div class="text-center group">
+          <div class="text-center group scroll-reveal" style="--delay: 0.2s">
             <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
               {{ animatedTech }}+
             </div>
-            <div class="text-gray-400 text-sm uppercase tracking-wider">Technologies</div>
+            <div class="text-gray-400 text-sm uppercase tracking-wider">Technologies maîtrisées</div>
           </div>
-          <div class="text-center group">
+          <div class="text-center group scroll-reveal" style="--delay: 0.3s">
             <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
-              {{ animatedClients }}+
+              {{ animatedProject }}+
             </div>
-            <div class="text-gray-400 text-sm uppercase tracking-wider">Clients satisfaits</div>
+            <div class="text-gray-400 text-sm uppercase tracking-wider">Projets menés</div>
+          </div>
+          <div class="text-center group scroll-reveal" style="--delay: 0.4s">
+            <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
+              100<span class="text-2xl">%</span>
+            </div>
+            <div class="text-gray-400 text-sm uppercase tracking-wider">Engagement qualité</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Section Compétences -->
+    <!-- Section Valeur ajoutée -->
     <div class="relative py-20 bg-gray-800">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white">Expertise Technique</h2>
-        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12"></div>
+        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Pourquoi me choisir ?</h2>
+        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Avantage 1 -->
+          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.1s">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-semibold text-white mb-4">Double expertise</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Ingénieur de formation avec 5 ans d'expérience industrielle, je combine rigueur technique et créativité pour des solutions sur-mesure.
+            </p>
+          </div>
+
+          <!-- Avantage 2 -->
+          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.2s">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-semibold text-white mb-4">Technologies modernes</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Stack technique à jour (Vue.js, React, Go, Tailwind) pour des applications performantes et évolutives.
+            </p>
+          </div>
+
+          <!-- Avantage 3 -->
+          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.3s">
+            <div class="text-4xl mb-4">🤝</div>
+            <h3 class="text-xl font-semibold text-white mb-4">Accompagnement complet</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              De l'idée à la mise en production, je vous accompagne à chaque étape avec transparence et réactivité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Compétences techniques -->
+    <div class="relative py-20 bg-gray-900">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Stack Technique</h2>
+        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
 
         <div class="grid md:grid-cols-3 gap-6">
           <!-- Frontend -->
-          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+          <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.1s">
             <div class="text-3xl mb-4">⚡</div>
             <h3 class="text-xl font-semibold text-white mb-4">Frontend</h3>
             <div class="space-y-3">
@@ -122,13 +159,13 @@
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                   <span class="text-blue-400 font-bold text-xs">EJS</span>
                 </div>
-                <span class="text-gray-300">Email JS</span>
+                <span class="text-gray-300">EmailJS</span>
               </div>
             </div>
           </div>
 
           <!-- Backend -->
-          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+          <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.2s">
             <div class="text-3xl mb-4">🔧</div>
             <h3 class="text-xl font-semibold text-white mb-4">Backend</h3>
             <div class="space-y-3">
@@ -140,9 +177,9 @@
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                  <span class="text-blue-400 font-bold">V</span>
+                  <span class="text-blue-400 font-bold">N</span>
                 </div>
-                <span class="text-gray-300">Vite</span>
+                <span class="text-gray-300">Node.js</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -154,7 +191,7 @@
           </div>
 
           <!-- DevOps -->
-          <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+          <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.3s">
             <div class="text-3xl mb-4">🚀</div>
             <h3 class="text-xl font-semibold text-white mb-4">DevOps & Tools</h3>
             <div class="space-y-3">
@@ -162,7 +199,7 @@
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
                   <span class="text-blue-400 font-bold">G</span>
                 </div>
-                <span class="text-gray-300">Github</span>
+                <span class="text-gray-300">Git / GitHub</span>
               </div>
               <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -183,15 +220,15 @@
     </div>
 
     <!-- Timeline Parcours -->
-    <div id="parcours" class="relative py-20 bg-gray-900">
+    <div id="parcours" class="relative py-20 bg-gray-800">
       <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white">Parcours</h2>
-        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12"></div>
+        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Mon Parcours</h2>
+        <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
 
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Colonne Expérience Professionnelle -->
           <div class="relative">
-            <div class="sticky top-8 mb-8">
+            <div class="sticky top-8 mb-8 scroll-reveal">
               <h3 class="text-2xl font-bold text-blue-400 mb-2 flex items-center gap-3">
                 <span class="text-3xl">💼</span>
                 Expérience Professionnelle
@@ -204,22 +241,22 @@
               <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-500/30"></div>
 
               <!-- Expérience 1 -->
-              <div class="relative pl-8">
-                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
-                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
-                  <h4 class="text-xl font-semibold text-white mb-2">Ingénieur en développement de solutions de test</h4>
+              <div class="relative pl-8 scroll-reveal" style="--delay: 0.1s">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-800"></div>
+                <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+                  <h4 class="text-xl font-semibold text-white mb-2">Ingénieur développement solutions de test</h4>
                   <p class="text-blue-400 mb-3 font-semibold">2023 - Présent</p>
-                  <p class="text-gray-400 text-sm leading-relaxed">Développement d'applications de test pour l'industrie automobile</p>
+                  <p class="text-gray-400 text-sm leading-relaxed">Développement d'applications de test pour l'industrie de la batterie. Automatisation et optimisation des processus.</p>
                 </div>
               </div>
 
               <!-- Expérience 2 -->
-              <div class="relative pl-8">
-                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900"></div>
-                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+              <div class="relative pl-8 scroll-reveal" style="--delay: 0.2s">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-800"></div>
+                <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
                   <h4 class="text-xl font-semibold text-white mb-2">Ingénieur bureau d'études</h4>
                   <p class="text-blue-400 mb-3 font-semibold">2019 - 2022</p>
-                  <p class="text-gray-400 text-sm leading-relaxed">Électromécaniques dans le milieu des ascensoristes</p>
+                  <p class="text-gray-400 text-sm leading-relaxed">Conception électromécanique dans le secteur des ascenseurs. Gestion de projets techniques complexes.</p>
                 </div>
               </div>
             </div>
@@ -227,10 +264,10 @@
 
           <!-- Colonne KDEV -->
           <div class="relative">
-            <div class="sticky top-8 mb-8">
+            <div class="sticky top-8 mb-8 scroll-reveal">
               <h3 class="text-2xl font-bold text-purple-400 mb-2 flex items-center gap-3">
                 <span class="text-3xl">👨🏽‍💼</span>
-                KDEV
+                KDEV - Freelance
               </h3>
               <div class="h-1 w-20 bg-purple-500"></div>
             </div>
@@ -239,14 +276,18 @@
               <!-- Ligne verticale -->
               <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-purple-500/30"></div>
 
-              <!-- Formation 1 -->
-              <div class="relative pl-8">
-                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-gray-900"></div>
-                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1">
+              <!-- Activité actuelle -->
+              <div class="relative pl-8 scroll-reveal" style="--delay: 0.1s">
+                <div class="absolute left-0 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-gray-800"></div>
+                <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1">
                   <h4 class="text-xl font-semibold text-white mb-2">Développeur Full-Stack</h4>
                   <p class="text-purple-400 mb-3 font-semibold">2025 - Présent</p>
-                  <p class="text-gray-400 text-sm leading-relaxed">Création d'applications web modernes et performantes</p>
-                  <p class="text-gray-400 text-sm leading-relaxed mt-2">Création et modernisation d'applications de bureau pour l'industrie</p>
+                  <p class="text-gray-400 text-sm leading-relaxed mb-2">
+                    <strong class="text-white">Applications web modernes</strong> : Sites vitrines, applications métier, e-commerce
+                  </p>
+                  <p class="text-gray-400 text-sm leading-relaxed">
+                    <strong class="text-white">Modernisation</strong> : Refonte et optimisation d'applications de bureau pour industriels
+                  </p>
                 </div>
               </div>
             </div>
@@ -265,9 +306,8 @@ export default {
   name: 'ProfilePage',
   setup() {
     const animatedYears = ref(0);
-    const animatedProjects = ref(0);
     const animatedTech = ref(0);
-    const animatedClients = ref(0);
+    const animatedProject = ref(0);
 
     const animateValue = (ref, target, duration = 2000) => {
       const start = 0;
@@ -285,14 +325,34 @@ export default {
       }, 16);
     };
 
+    // Fonction pour gérer les animations au scroll
+    const setupScrollAnimations = () => {
+      const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+      
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      scrollRevealElements.forEach(el => {
+        scrollObserver.observe(el);
+      });
+    };
+
     onMounted(() => {
+      // Animation des statistiques
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             animateValue(animatedYears, 5);
-            animateValue(animatedProjects, 50);
-            animateValue(animatedTech, 20);
-            animateValue(animatedClients, 30);
+            animateValue(animatedTech, 15);
+            animateValue(animatedProject, 50);
             observer.disconnect();
           }
         });
@@ -302,14 +362,16 @@ export default {
       if (statsElement) {
         observer.observe(statsElement);
       }
+
+      // Setup des animations au scroll
+      setupScrollAnimations();
     });
 
     return {
-      myselfImage,        // ← AJOUTEZ CETTE LIGNE !
+      myselfImage,
       animatedYears,
-      animatedProjects,
       animatedTech,
-      animatedClients
+      animatedProject
     };
   }
 };
@@ -328,9 +390,41 @@ export default {
   100% { transform: translateY(50px); }
 }
 
+/* Animations Hero */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeIn 1s ease-out 0.6s backwards;
+}
+
+/* Animations au scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition-delay: var(--delay, 0s);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .animate-pulse-slow {

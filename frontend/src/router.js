@@ -16,6 +16,10 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Toujours retourner en haut de la page
+    return { top: 0, behavior: 'instant' }
+  }
 })
 
 export default router
