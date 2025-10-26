@@ -17,9 +17,11 @@
         <div class="relative w-full mx-auto group">
           <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden not-[]:shadow-lg">
 
-            <img :src="myselfImage" />
-
-
+            <img 
+              :src="myselfImage" 
+              alt="Photo de profil KABRÉ" 
+              class="w-full h-full object-cover"
+            />
             <!-- Overlay avec texte au survol -->
             <div class="absolute inset-0 flex flex-col items-center justify-end text-center px-6 pb-12 bg-slate-800/50">
               <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider">
@@ -257,7 +259,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import myselfImage from '../assets/Images/myself.png'
+import myselfImage from '../assets/images/myself.png'
 
 export default {
   name: 'ProfilePage',
@@ -303,6 +305,7 @@ export default {
     });
 
     return {
+      myselfImage,        // ← AJOUTEZ CETTE LIGNE !
       animatedYears,
       animatedProjects,
       animatedTech,
