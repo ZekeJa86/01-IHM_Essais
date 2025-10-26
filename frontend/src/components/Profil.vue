@@ -24,7 +24,7 @@
             />
             <!-- Overlay avec texte au survol -->
             <div class="absolute inset-0 flex flex-col items-center justify-end text-center px-6 pb-12 bg-slate-800/50">
-              <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider animate-fade-in">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-wider animate-fade-in">
                 KABRÉ Sylvain
               </h1>
               
@@ -58,7 +58,7 @@
     <!-- Statistiques réelles et vendeuses -->
     <div class="relative py-20 bg-gray-900">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12 text-white scroll-reveal">Mon expertise en chiffres</h2>
+        <h2 class="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 text-white scroll-reveal">Mon expertise en chiffres</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div class="text-center group scroll-reveal" style="--delay: 0.1s">
             <div class="text-5xl font-bold text-blue-400 mb-2 transition-transform duration-300 group-hover:scale-110">
@@ -91,7 +91,7 @@
     <!-- Section Valeur ajoutée -->
     <div class="relative py-20 bg-gray-800">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Pourquoi me choisir ?</h2>
+        <h2 class="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white scroll-reveal">Pourquoi me choisir ?</h2>
         <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -108,7 +108,7 @@
           <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 scroll-reveal" style="--delay: 0.2s">
             <div class="text-4xl mb-4">⚡</div>
             <h3 class="text-xl font-semibold text-white mb-4">Technologies modernes</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <p class="text-gray-400 text-sm leading-relaxed ">
               Stack technique à jour (Vue.js, React, Go, Tailwind) pour des applications performantes et évolutives.
             </p>
           </div>
@@ -128,7 +128,7 @@
     <!-- Section Compétences techniques -->
     <div class="relative py-20 bg-gray-900">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Stack Technique</h2>
+        <h2 class="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white scroll-reveal">Stack Technique</h2>
         <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -222,13 +222,13 @@
     <!-- Timeline Parcours -->
     <div id="parcours" class="relative py-20 bg-gray-800">
       <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white scroll-reveal">Mon Parcours</h2>
+        <h2 class="text-m sm:text-3xl md:text-4xl lg:text-5xl font-bold text- mb-4 text-white scroll-reveal">Mon Parcours</h2>
         <div class="h-1 w-32 bg-gradient-to-r from-blue-500 to-blue-400 mx-auto mb-12 scroll-reveal"></div>
 
         <div class="grid md:grid-cols-2 gap-8">
           <!-- Colonne Expérience Professionnelle -->
           <div class="relative">
-            <div class="sticky top-8 mb-8 scroll-reveal">
+            <div class="md:sticky top-8 mb-8 scroll-reveal">
               <h3 class="text-2xl font-bold text-blue-400 mb-2 flex items-center gap-3">
                 <span class="text-3xl">💼</span>
                 Expérience Professionnelle
@@ -264,7 +264,7 @@
 
           <!-- Colonne KDEV -->
           <div class="relative">
-            <div class="sticky top-8 mb-8 scroll-reveal">
+            <div class="md:sticky top-8 mb-8 scroll-reveal">
               <h3 class="text-2xl font-bold text-purple-400 mb-2 flex items-center gap-3">
                 <span class="text-3xl">👨🏽‍💼</span>
                 KDEV - Freelance

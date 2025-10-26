@@ -6,7 +6,7 @@
       <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
       <div class="relative max-w-7xl mx-auto px-6 py-20">
         <div class="text-center space-y-6">
-          <h1 class="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+ <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
             Mes Projets
           </h1>
           <p class="text-xl text-slate-400 max-w-2xl mx-auto">

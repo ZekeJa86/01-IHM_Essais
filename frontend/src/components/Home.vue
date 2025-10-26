@@ -18,8 +18,8 @@
     <!-- Hero Section Centered -->
     <div class="min-h-screen flex flex-col items-center justify-center relative z-10">
       <!-- Hero Title -->
-      <div
-        class="font-extrabold text-5xl md:text-6xl antialiased text-center
+<div
+        class="font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl antialiased text-center
               [text-wrap:balance] bg-clip-text text-transparent
               bg-gradient-to-r from-slate-400/60 to-slate-200 mb-6 animate-fade-in">
  Ensemble, donnons vie à vos projets <span class="text-blue-400 inline-flex flex-col">
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Subtitle -->
-      <p class="text-slate-400 text-xl md:text-2xl text-center max-w-3xl mb-12 font-light animate-fade-in-delay">
+      <p class="text-slate-400 sm:text-xl md:text-2xl lg:text-3xl text-center max-w-3xl mb-12 font-light animate-fade-in-delay">
         Développement web et logiciel sur mesure pour vos environnements industriels.</p>
       <!-- CTA Button -->
       <a href="/contact" 
