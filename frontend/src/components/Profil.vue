@@ -16,11 +16,9 @@
         <!-- Image pleine largeur -->
         <div class="relative w-full mx-auto group">
           <div class="relative w-full h-[60vh] md:h-[70vh] overflow-hidden not-[]:shadow-lg">
-            <img 
-              src="../assets/Images/myself.png" 
-              alt="KABRÉ Profile" 
-              class="w-full h-full object-cover"
-            />
+
+            <img :src="myselfImage" />
+
 
             <!-- Overlay avec texte au survol -->
             <div class="absolute inset-0 flex flex-col items-center justify-end text-center px-6 pb-12 bg-slate-800/50">
@@ -259,6 +257,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+import myselfImage from '../assets/Images/myself.png'
 
 export default {
   name: 'ProfilePage',
