@@ -14,6 +14,7 @@
     "@tsparticles/slim": "^3.9.1",
     "@vue-email/components": "^0.0.21",
     "@vue-email/render": "^0.0.9",
+    "@emailjs/browser": "^4.4.1",
     "@vueuse/core": "^10.x.x",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
