@@ -1,0 +1,28 @@
+{
+  "name": "02-ösleya b.",
+  "version": "1.0.0",
+  "description": "This is the official Wails Svelte template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZekeJa86/02-ösleya b..git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZekeJa86/02-ösleya b./issues"
+  },
+  "homepage": "https://github.com/ZekeJa86/02-ösleya b.#readme",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@vercel/analytics": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.9"
+  }
+}
