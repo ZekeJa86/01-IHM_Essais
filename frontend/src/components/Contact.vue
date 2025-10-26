@@ -163,7 +163,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 
 console.log("Contact.vue monté ✅");
 
