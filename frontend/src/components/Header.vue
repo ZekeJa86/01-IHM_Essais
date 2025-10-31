@@ -20,7 +20,7 @@ const closeMobileMenu = () => {
     <!-- Header Desktop et Mobile -->
     <div class="fixed top-0 left-0 w-full flex flex-row h-16 justify-between items-center gap-4 px-4 z-50 bg-gray-900/50 backdrop-blur-sm shadow-md">
       <!-- Logo -->
-      <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-20 w-auto" />
+      <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-30 w-auto" />
       
       <!-- Navigation Desktop (cachée sur mobile) -->
       <nav class="hidden md:flex flex-row items-center gap-4">

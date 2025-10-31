@@ -3,7 +3,7 @@
     <div class="w-full max-w-screen-xl mx-auto px-4">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-12 w-auto" />
+                <img src="../assets/images/KDEV_light.png" alt="Logo KDEV" class="h-20 w-auto" />
                 <span class="self-center text-sm font-semibold whitespace-nowrap dark:text-white">« Ensemble, donnons vie à vos projets numériques. »</span>
             </a>
             <ul class="flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400">
