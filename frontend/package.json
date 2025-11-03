@@ -13,6 +13,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "@vue-email/components": "^0.0.21",
+    "@vercel/analytics": "^1.5.0",
     "@vue-email/render": "^0.0.9",
     "@emailjs/browser": "^4.4.1",
     "@vueuse/core": "^10.x.x",
